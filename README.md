@@ -4,6 +4,14 @@ KeeAgent is a plugin for KeePass 2.x. It allows other programs to access SSH
 keys stored in your KeePass database for authentication. It can either act as a
 stand-alone agent or it can interface with an external agent.
 
+### Local changes
+
+This customized version is based on KeeAgent v0.13.8. **Alt+A** loads SSH keys
+from the selected entries, including search results. The group-loading command
+has no keyboard shortcut, preventing accidental group loads through Ctrl+M.
+The group menu command and Ctrl+Shift+M to load a key and open its URL remain
+available. Official KeeAgent updates do not include this customization.
+
 
 DOWNLOAD
 --------

@@ -286,7 +286,7 @@ namespace KeeAgent
           var loadKeyMenuItem = new ToolStripMenuItem() {
             Name = entryMenuLoadSubmenuItemName,
             Text = Translatable.LoadKeyContextMenuItem,
-            ShortcutKeys = Keys.Control | Keys.M,
+            ShortcutKeys = Keys.Alt | Keys.A,
           };
           loadKeyMenuItem.Click += PwEntryMenuLoadKeyItem_Clicked;
           keeagentMenu.DropDownItems.Add(loadKeyMenuItem);
@@ -308,7 +308,8 @@ namespace KeeAgent
             Name = groupMenuItemName,
             Text = Translatable.LoadKeysContextMenuItem,
             Image = Resources.KeeAgentIcon_png,
-            ShortcutKeys = Keys.Control | Keys.M,
+            // Group loading must never run through a keyboard shortcut.
+            ShortcutKeys = Keys.None,
           };
           groupContextMenuLoadKeysMenuItem.Click += GroupContextMenuLoadKeysMenuItem_Click;
           var groupMenu = pluginHost.MainWindow.MainMenu.Items.Find("m_menuGroup", false).SingleOrDefault() as ToolStripMenuItem;
