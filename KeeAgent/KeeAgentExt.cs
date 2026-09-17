@@ -323,6 +323,7 @@ namespace KeeAgent
           keeAgentMenuItem.Text = Translatable.KeeAgent;
           keeAgentMenuItem.ToolTipText = Translatable.KeeAgentMenuItemToolTip;
           keeAgentMenuItem.Image = Resources.KeeAgentIcon_png;
+          keeAgentMenuItem.ShortcutKeys = Keys.Control | Keys.Shift | Keys.A;
           keeAgentMenuItem.Click += manageKeeAgentMenuItem_Click;
           return keeAgentMenuItem;
         case PluginMenuType.Tray:

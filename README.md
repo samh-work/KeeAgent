@@ -9,6 +9,7 @@ stand-alone agent or it can interface with an external agent.
 This customized version is based on KeeAgent v0.13.8. **Alt+A** loads SSH keys
 from the selected entries, including search results. The group-loading command
 has no keyboard shortcut, preventing accidental group loads through Ctrl+M.
+**Ctrl+Shift+A** opens the KeeAgent manager, the same as Tools > KeeAgent.
 The group menu command and Ctrl+Shift+M to load a key and open its URL remain
 available. Official KeeAgent updates do not include this customization.
 
